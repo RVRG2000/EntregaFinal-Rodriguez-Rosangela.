@@ -1,7 +1,10 @@
 $color-principal: #f1fbff;
-$color-secundario: red;
-$color-tercerario: green;
-
+$color-secundario: rgba(0, 0, 0, 0.589);
+$color-sombra: 15px 15px 40px rgba(0, 0, 0, 0.15);
+$color-animacion: rgba(115, 197, 22, 0.452);
+$color-animacion2: rgba(231, 218, 218, 0.801);
+$color-verde: rgba(21, 70, 23, 0.774);
+$color-limon: rgb(77, 224, 63);
 
 * 
 {
@@ -44,15 +47,16 @@ body
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(0, 0, 0, 0.7);
+	background: $color-secundario;
 	z-index: 1;
 }
-.navbar .getstarted {
+.navbar .getstarted 
+{
 	background: #106eea;
 	margin-left: 30px;
 	border-radius: 4px;
 	font-weight: 400;
-	color: #fff;
+	color: $color-principal;
 	text-decoration: none;
 	padding: .5rem 1rem;
 	line-height: 2.3;
@@ -62,21 +66,23 @@ body
 	text-transform: uppercase;
 	font-weight: 500;
 }
-.navbar-light .navbar-brand {
-	color: #000;
+.navbar-light .navbar-brand 
+{
+	color: $color-secundario;
 	font-size: 25px;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2px;
 }
-.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
-	color: #000;
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover
+ {
+	color: $color-secundario;
 }
 .navbar-light .navbar-nav .nav-link {
-	color: #000;
+	color: $color-secundario;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-	color: #000;
+	color: $color-secundario;
 }
 .w-100 {
 	height: 100vh;
@@ -85,13 +91,13 @@ body
 	padding: 1px 5px;
 	font-size: 18px;
 	line-height: 0.3;
-	background: #fff;
+	background: $color-principal;
 }
 .portfolio .card {
-	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+	box-shadow: $color-sombra;
 }
 .team .card {
-	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+	box-shadow: $color-sombra;
 }
 .services .card-body i {
 	font-size: 50px;
@@ -106,7 +112,8 @@ font-weight: bolder;
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) 
+{
 	.carousel-caption {
 		bottom: 370px;
 	}
@@ -150,8 +157,11 @@ font-weight: bolder;
 
 .footer
 {
-	background-image: linear-gradient(to left, rgba(115, 197, 22, 0.452), rgba(231, 218, 218, 0.801));
-    
+	background-image: linear-gradient(to left, $color-animacion,$color-animacion2);
+    font-size: 18px;
+
+	font-weight: semi-bold;
+
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -166,30 +176,30 @@ font-weight: bolder;
 {
     0%
     {
-        background-color: rgba(21, 70, 23, 0.774);
+        background-color: $color-verde;
     }
     20%
     {
-        background-color: rgb(77, 224, 63);
+        background-color: $color-limon;
     }
     60%
     {
-        background-color: rgba(21, 70, 23, 0.774);
+        background-color: $color-verde;
     }
     80%
     {
-		background-color: rgb(77, 224, 63);
+		background-color: $color-limon;
     } 
     100%
     {
-        background-color: rgba(21, 70, 23, 0.774);
+        background-color: $color-verde;
     }
    
 }
 
 .about-text
 {
-	background-image: linear-gradient(to left, rgba(115, 197, 22, 0.452), rgba(231, 218, 218, 0.801));
+	background-image: linear-gradient(to left, $color-animacion, $color-animacion2);
     
 	margin: 0;
 	padding: 0;
@@ -205,23 +215,23 @@ font-weight: bolder;
 {
     0%
     {
-        background-color: rgba(21, 70, 23, 0.774);
+        background-color: $color-verde;
     }
     20%
     {
-        background-color: rgb(77, 224, 63);
+        background-color: $color-limon;
     }
     60%
     {
-        background-color: rgba(21, 70, 23, 0.774);
+        background-color:$color-verde;
     }
     80%
     {
-		background-color: rgb(77, 224, 63);
+		background-color: $color-limon;
     } 
     100%
     {
-        background-color: rgba(21, 70, 23, 0.774);
+        background-color: $color-verde;
     }
    
 }
