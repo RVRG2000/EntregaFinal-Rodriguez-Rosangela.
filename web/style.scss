@@ -1,3 +1,4 @@
+$--main-backgrouns-color-nav: #106eea;
 $color-principal: #f1fbff;
 $color-secundario: rgba(0, 0, 0, 0.589);
 $color-sombra: 15px 15px 40px rgba(0, 0, 0, 0.15);
@@ -54,7 +55,7 @@ body
 }
 .navbar .getstarted 
 {
-	background: #106eea;
+	background: $--main-backgrouns-color-nav;
 	margin-left: 30px;
 	border-radius: 4px;
 	font-weight: 400;
