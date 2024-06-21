@@ -23,6 +23,7 @@ body
 .carousel-item {
 	height: 100vh;
 	min-height: 300px;
+	object-fit: contain;
 }
 .carousel-caption {
 	bottom: 220px;
@@ -49,6 +50,7 @@ body
 	left: 0;
 	background: $color-secundario;
 	z-index: 1;
+	object-fit: contain;
 }
 .navbar .getstarted 
 {
