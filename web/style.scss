@@ -174,31 +174,6 @@ font-weight: bolder;
     animation-iteration-count: infinite;
 }
 
-@keyframes prueba
-{
-    0%
-    {
-        background-color: $color-verde;
-    }
-    20%
-    {
-        background-color: $color-limon;
-    }
-    60%
-    {
-        background-color: $color-verde;
-    }
-    80%
-    {
-		background-color: $color-limon;
-    } 
-    100%
-    {
-        background-color: $color-verde;
-    }
-   
-}
-
 .about-text
 {
 	background-image: linear-gradient(to left, $color-animacion, $color-animacion2);
@@ -213,6 +188,7 @@ font-weight: bolder;
     animation-iteration-count: infinite;
 }
 
+
 @keyframes prueba
 {
     0%
@@ -225,7 +201,7 @@ font-weight: bolder;
     }
     60%
     {
-        background-color:$color-verde;
+        background-color: $color-verde;
     }
     80%
     {
@@ -237,4 +213,5 @@ font-weight: bolder;
     }
    
 }
+
 
